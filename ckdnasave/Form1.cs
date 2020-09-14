@@ -268,5 +268,10 @@ namespace ckdnasave
         {
             Process.Start(Convert.ToString(reg.GetValue("Personal"))+ "\\Paradox Interactive\\Crusader Kings III\\save games");
         }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(val);
+        }
     }
 }
