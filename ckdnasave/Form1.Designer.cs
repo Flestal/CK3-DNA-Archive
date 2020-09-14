@@ -40,7 +40,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_image = new System.Windows.Forms.Button();
             this.btn_dnaRmv = new System.Windows.Forms.Button();
             this.btn_copy = new System.Windows.Forms.Button();
@@ -62,14 +61,17 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.verProgram = new System.Windows.Forms.Label();
+            this.verGithub = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dna_img_preview)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dna_list
@@ -188,6 +190,8 @@
             this.tabPage1.Controls.Add(this.DNA_CODE);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Controls.Add(this.verGithub);
+            this.tabPage1.Controls.Add(this.verProgram);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
@@ -197,17 +201,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "DNA 목록 보기";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ckdnasave.Properties.Resources._47b81ad8240423400380cd13ac511dae;
-            this.pictureBox1.Location = new System.Drawing.Point(725, 371);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btn_image
             // 
@@ -438,6 +431,37 @@
             this.linkLabel3.Text = "DNA 세이브 폴더";
             this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ckdnasave.Properties.Resources._47b81ad8240423400380cd13ac511dae;
+            this.pictureBox1.Location = new System.Drawing.Point(725, 371);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // verProgram
+            // 
+            this.verProgram.AutoSize = true;
+            this.verProgram.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.verProgram.Location = new System.Drawing.Point(587, 371);
+            this.verProgram.Name = "verProgram";
+            this.verProgram.Size = new System.Drawing.Size(104, 20);
+            this.verProgram.TabIndex = 2;
+            this.verProgram.Text = "프로그램 버전";
+            // 
+            // verGithub
+            // 
+            this.verGithub.AutoSize = true;
+            this.verGithub.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.verGithub.Location = new System.Drawing.Point(573, 403);
+            this.verGithub.Name = "verGithub";
+            this.verGithub.Size = new System.Drawing.Size(89, 20);
+            this.verGithub.TabIndex = 2;
+            this.verGithub.Text = "깃허브 버전";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -451,7 +475,6 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dna_img_preview)).EndInit();
@@ -461,6 +484,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -500,6 +524,8 @@
         private System.Windows.Forms.Button btn_saveFolder;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.LinkLabel linkLabel3;
+        private System.Windows.Forms.Label verGithub;
+        private System.Windows.Forms.Label verProgram;
     }
 }
 

@@ -16,7 +16,7 @@ namespace ckdnasave
 {
     public partial class Form1 : Form
     {
-        string version = "1.0.1.0";
+        string version = "1.0.1.1";
 
         GitHubClient client = new GitHubClient(new ProductHeaderValue("CK3-DNA-Archive"));
         RegistryKey reg = Registry.CurrentUser;
@@ -35,6 +35,8 @@ namespace ckdnasave
                 Form_Update f = new Form_Update();
                 f.ShowDialog();
             }
+            verGithub.Text = "Github 버전 : "+release.Result.TagName;
+            verProgram.Text = "현재 버전 : "+version;
             reg = reg.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders",false);
             val = Convert.ToString(reg.GetValue("Personal"));
             val += "\\CK_DNA";
@@ -87,6 +89,8 @@ namespace ckdnasave
 
         void list_refresh(bool isSearch=false)
         {
+            DNA_CODE.Text = "";
+            btn_image.Enabled = false;
             dna_list.Items.Clear();
             foreach(string key in dic.Keys)
             {
