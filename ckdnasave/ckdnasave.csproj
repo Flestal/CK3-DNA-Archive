@@ -36,6 +36,9 @@
     <ApplicationIcon>ck3_101.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Octokit, Version=0.48.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Octokit.0.48.0\lib\net46\Octokit.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -61,6 +64,12 @@
     <Compile Include="Form_ImagePopup.Designer.cs">
       <DependentUpon>Form_ImagePopup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Update.Designer.cs">
+      <DependentUpon>Form_Update.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -68,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ImagePopup.resx">
       <DependentUpon>Form_ImagePopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Update.resx">
+      <DependentUpon>Form_Update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -79,6 +91,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

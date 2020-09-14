@@ -10,11 +10,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Octokit;
 
 namespace ckdnasave
 {
     public partial class Form1 : Form
     {
+        string version = "1.0.1.0";
+
+        GitHubClient client = new GitHubClient(new ProductHeaderValue("CK3-DNA-Archive"));
         RegistryKey reg = Registry.CurrentUser;
         string val;
         DirectoryInfo dir;
@@ -24,6 +28,13 @@ namespace ckdnasave
         public Form1()
         {
             InitializeComponent();
+            var release = client.Repository.Release.GetLatest("Flestal", "CK3-DNA-Archive");
+            //DNA_CODE.Text = Convert.ToString(release.Result.TagName == version);
+            if (release.Result.TagName != version)
+            {
+                Form_Update f = new Form_Update();
+                f.ShowDialog();
+            }
             reg = reg.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders",false);
             val = Convert.ToString(reg.GetValue("Personal"));
             val += "\\CK_DNA";
@@ -37,7 +48,6 @@ namespace ckdnasave
                 StreamReader SR = new StreamReader(val + "\\CK_DNA.csv");
                 string line;
                 char sp = ',';
-                short i = 0;
                 while ((line = SR.ReadLine()) != null)
                 {
                     string[] namecode = line.Split(sp);
@@ -54,6 +64,7 @@ namespace ckdnasave
                 SW.Write("");
                 SW.Close();
             }
+            
         }
 
         private void dna_list_SelectedIndexChanged(object sender, EventArgs e)
@@ -123,7 +134,6 @@ namespace ckdnasave
             StreamReader SR = new StreamReader(val + "\\CK_DNA.csv");
             string line;
             char sp = ',';
-            short i = 0;
             while ((line = SR.ReadLine()) != null)
             {
                 string[] namecode = line.Split(sp);
