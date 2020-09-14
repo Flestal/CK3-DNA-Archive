@@ -1,0 +1,10 @@
+D:\Documents\윈폼\ckdnasave\ckdnasave\bin\Release\ckdnasave.exe.config
+D:\Documents\윈폼\ckdnasave\ckdnasave\bin\Release\ckdnasave.exe
+D:\Documents\윈폼\ckdnasave\ckdnasave\bin\Release\ckdnasave.pdb
+D:\Documents\윈폼\ckdnasave\ckdnasave\obj\Release\ckdnasave.Form1.resources
+D:\Documents\윈폼\ckdnasave\ckdnasave\obj\Release\ckdnasave.Form_ImagePopup.resources
+D:\Documents\윈폼\ckdnasave\ckdnasave\obj\Release\ckdnasave.Properties.Resources.resources
+D:\Documents\윈폼\ckdnasave\ckdnasave\obj\Release\ckdnasave.csproj.GenerateResource.cache
+D:\Documents\윈폼\ckdnasave\ckdnasave\obj\Release\ckdnasave.csproj.CoreCompileInputs.cache
+D:\Documents\윈폼\ckdnasave\ckdnasave\obj\Release\ckdnasave.exe
+D:\Documents\윈폼\ckdnasave\ckdnasave\obj\Release\ckdnasave.pdb
