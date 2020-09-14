@@ -8,3 +8,4 @@ D:\Documents\윈폼\ckdnasave\ckdnasave\obj\Release\ckdnasave.csproj.GenerateRes
 D:\Documents\윈폼\ckdnasave\ckdnasave\obj\Release\ckdnasave.csproj.CoreCompileInputs.cache
 D:\Documents\윈폼\ckdnasave\ckdnasave\obj\Release\ckdnasave.exe
 D:\Documents\윈폼\ckdnasave\ckdnasave\obj\Release\ckdnasave.pdb
+D:\Documents\윈폼\ckdnasave\ckdnasave\obj\Release\ckdnasave.csprojAssemblyReference.cache

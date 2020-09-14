@@ -142,6 +142,7 @@
             this.dna_name_edit.Name = "dna_name_edit";
             this.dna_name_edit.Size = new System.Drawing.Size(150, 25);
             this.dna_name_edit.TabIndex = 3;
+            this.dna_name_edit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dna_name_edit_KeyPress);
             // 
             // label2
             // 

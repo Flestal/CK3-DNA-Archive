@@ -273,5 +273,13 @@ namespace ckdnasave
         {
             Process.Start(val);
         }
+
+        private void dna_name_edit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == ':'|| e.KeyChar == '\\'|| e.KeyChar == '/'|| e.KeyChar == '*'|| e.KeyChar == '?' || e.KeyChar == '\"' || e.KeyChar == '<' || e.KeyChar == '>' || e.KeyChar == '|')
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
