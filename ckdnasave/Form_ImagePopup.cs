@@ -24,6 +24,7 @@ namespace ckdnasave
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            pictureBox1.Dispose();
             this.Close();
         }
 

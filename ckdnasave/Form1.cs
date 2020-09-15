@@ -16,7 +16,7 @@ namespace ckdnasave
 {
     public partial class Form1 : Form
     {
-        string version = "1.0.1.1";
+        string version = "1.0.1.2";
 
         GitHubClient client = new GitHubClient(new ProductHeaderValue("CK3-DNA-Archive"));
         RegistryKey reg = Registry.CurrentUser;
@@ -197,7 +197,8 @@ namespace ckdnasave
                             dna_img_preview.Image.Save(src + "\\image.jpg");
                             dic_img.Add(dna_name_edit.Text,src+"\\image.jpg");
                             dna_add_img.Text = "";
-                            dna_img_preview.Image = null;
+                            dna_img_preview.Dispose();
+                            //dna_img_preview.Image = null;
                             //dna_add_log.Text += dic_img[dna_name_edit.Text];
                         }
                         else
